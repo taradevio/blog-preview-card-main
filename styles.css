@@ -7,6 +7,7 @@
 
 #container {
     display: flex;
+    max-width: 1440px;
     justify-content: center;
     align-items: center;
     border: 2px solid;
@@ -16,19 +17,64 @@
 
 #content {
     background-color: hsl(0, 0%, 100%);
-    border: 2px solid;
-    max-width: 30%;
-    padding: 25px 18px;
-    text-align: left;
+    border: 2px solid hsl(0, 0%, 7%);
+    box-shadow: 7px 7px 1px 2px hsl(0, 0%, 7%);
+    max-width: 100%;
+    width: 380px;
+    padding: 25px 20px;
     border-radius: 15px;
 }
 
 .image {
-    overflow: auto;
-    text-align: center;
+    overflow: hidden;
+    text-align: left;
 }
 
 .image > img {
     border-radius: 15px;
 }
 
+.category {
+    margin-top: 15px;
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.text {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user > img {
+    width: 30px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 375px) {
+    #content {
+        max-width: 100%;
+        width: 380px;
+    }
+}
