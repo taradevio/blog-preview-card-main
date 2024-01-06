@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+}
+
+#content {
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    max-width: 30%;
+    padding: 25px 18px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.image {
+    overflow: auto;
+    text-align: center;
+}
+
+.image > img {
+    border-radius: 15px;
+}
+
